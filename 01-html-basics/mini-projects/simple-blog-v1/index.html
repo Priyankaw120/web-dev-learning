@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A simple, semantic, accessible blog layout created using pure HTML." />
+  <title>Simple Blog — HTML Basics Mini Project</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Simple Blog</h1>
+    <p>A beginner-friendly blog created using pure semantic HTML.</p>
+
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#posts">Posts</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#links">Useful Links</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr />
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- About -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About This Blog</h2>
+      <p>
+        This mini-project was created as part of my HTML learning journey.  
+        It focuses on using semantic HTML tags, creating structured content,  
+        and writing clean, readable markup without any CSS or JavaScript.
+      </p>
+      <p>
+        The goal is to understand how the browser reads HTML and how  
+        clear structure improves accessibility and SEO.
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- Posts -->
+    <section id="posts" aria-labelledby="posts-heading">
+      <h2 id="posts-heading">Recent Posts</h2>
+
+      <article aria-labelledby="post1-heading">
+        <h3 id="post1-heading">The Importance of Semantic HTML</h3>
+        <p>
+          Semantic HTML gives meaning to your content. Tags like  
+          <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, and  
+          <code>&lt;article&gt;</code> help search engines, developers,  
+          and assistive technologies understand the purpose of each part  
+          of a webpage.
+        </p>
+
+        <h4>Why it matters:</h4>
+        <ul>
+          <li><strong>SEO:</strong> Helps search engines understand your content.</li>
+          <li><strong>Accessibility:</strong> Screen readers can navigate pages better.</li>
+          <li><strong>Readability:</strong> Makes the structure clearer for developers.</li>
+        </ul>
+      </article>
+
+      <article aria-labelledby="post2-heading">
+        <h3 id="post2-heading">Why Learning HTML Matters</h3>
+        <p>
+          HTML is the foundation of every website. Before CSS or JavaScript,  
+          a webpage must start with strong, meaningful structure.  
+          Learning HTML properly builds confidence and makes learning  
+          CSS and JavaScript much easier.
+        </p>
+
+        <h4>A simple beginner roadmap:</h4>
+        <ol>
+          <li>Understand basic tags and structure</li>
+          <li>Create pages using semantic elements</li>
+          <li>Work with lists, images, and links</li>
+          <li>Build forms with proper labels</li>
+          <li>Create your first mini-project (like this one!)</li>
+        </ol>
+      </article>
+
+    </section>
+
+    <hr />
+
+    <!-- Gallery -->
+    <section id="gallery" aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading">Gallery</h2>
+      <p>A sample image loaded using the <code>&lt;img&gt;</code> tag:</p>
+
+      <img 
+        src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1200&q=60"
+        alt="Notebook, laptop and a cup of coffee on a desk"
+      />
+    </section>
+
+    <hr />
+
+    <!-- Useful Links -->
+    <section id="links" aria-labelledby="links-heading">
+      <h2 id="links-heading">Useful Links</h2>
+      <p>Helpful resources to learn more about HTML:</p>
+
+      <ul>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+             target="_blank" rel="noopener noreferrer">
+            MDN Web Docs (Official)
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.w3schools.com/html/"
+             target="_blank" rel="noopener noreferrer">
+            W3Schools — Interactive Tutorials
+          </a>
+        </li>
+
+        <li>
+          <a href="https://html.com/"
+             target="_blank" rel="noopener noreferrer">
+            HTML.com — Beginner Guides
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <!-- Contact -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+
+      <form action="#" method="post" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your Name" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="yourname@example.com" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <hr />
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Simple Blog — Built using semantic HTML only.</p>
+    <p>
+      <a href="https://github.com/Priyankaw120" target="_blank" rel="noopener noreferrer">
+        GitHub Profile
+      </a>
+    </p>
+  </footer>
+
+</body>
+</html>
