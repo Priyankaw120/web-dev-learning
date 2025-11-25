@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Us form built using pure HTML with proper validation and accessibility." />
+  <title>Contact Us</title>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+    <p>Fill out this form and we’ll get back to you shortly.</p>
+  </header>
+
+  <hr />
+
+  <main>
+    <form action="#" method="post">
+      
+      <!-- Name -->
+      <label for="name">Full Name</label><br />
+      <input 
+        id="name" 
+        name="name" 
+        type="text" 
+        placeholder="Enter your full name" 
+        required 
+      />
+      <br /><br />
+
+      <!-- Email -->
+      <label for="email">Email</label><br />
+      <input 
+        id="email" 
+        name="email" 
+        type="email" 
+        placeholder="Enter your email address" 
+        required 
+      />
+      <br /><br />
+
+      <!-- Phone -->
+      <label for="phone">Phone Number</label><br />
+      <input 
+        id="phone" 
+        name="phone" 
+        type="tel" 
+        placeholder="123-456-7890" 
+        pattern="[0-9]{10}" 
+        required 
+      />
+      <small>Enter 10-digit phone number.</small>
+      <br /><br />
+
+      <!-- Message -->
+      <label for="message">Message</label><br />
+      <textarea 
+        id="message" 
+        name="message" 
+        rows="5" 
+        placeholder="Write your message here..." 
+        required
+      ></textarea>
+      <br /><br />
+
+      <!-- Submit -->
+      <button type="submit">Submit</button>
+
+    </form>
+  </main>
+
+  <hr />
+
+  <footer>
+    <p>&copy; 2025 My Contact Form | Built using pure HTML</p>
+  </footer>
+
+</body>
+</html>
