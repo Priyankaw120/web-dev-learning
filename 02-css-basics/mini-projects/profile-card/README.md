@@ -38,6 +38,6 @@ This project demonstrates essential front-end skills: layout design, flexbox ali
 
 1. Download or clone the repository:
    ```sh
-   git clone https://github.com/YOUR_USERNAME/web-dev-learning
+   git clone https://github.com/Priyankaw120/web-dev-learning
 
 
