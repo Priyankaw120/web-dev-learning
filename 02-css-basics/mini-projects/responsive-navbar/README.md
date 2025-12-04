@@ -7,8 +7,7 @@ This project showcases Flexbox layout skills, mobile responsiveness, and a CSS-o
 
 ## 📸 Preview (Screenshot)
 
-> uploading..
-
+<img width="475" height="80" alt="image" src="https://github.com/user-attachments/assets/c80e6d44-4449-4a8d-8dcf-574f5e8a73cd" />
 
 ---
 
