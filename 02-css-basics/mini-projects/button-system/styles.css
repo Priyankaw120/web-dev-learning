@@ -1,0 +1,132 @@
+/* ------------------------------------------
+   1. Design Tokens
+------------------------------------------- */
+:root {
+  --primary: #4f7ef7;
+  --primary-dark: #2e5bd1;
+  --text-dark: #111;
+  --white: #fff;
+  --transition-fast: 0.18s ease;
+  --transition-medium: 0.28s ease;
+}
+
+/* ------------------------------------------
+   Base Styles
+------------------------------------------- */
+body {
+  font-family: "Inter", sans-serif;
+  background: #f5f5f8;
+  padding: 40px;
+}
+
+.section {
+  display: flex;
+  gap: 24px;
+}
+
+/* ------------------------------------------
+   FAANG-Level Base Button
+------------------------------------------- */
+.btn {
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all var(--transition-medium);
+  position: relative;
+}
+
+/* Hover scaling & shadow for all buttons */
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* ------------------------------------------
+   2. Primary Button
+------------------------------------------- */
+.btn--primary {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.btn--primary:hover {
+  background: var(--primary-dark);
+}
+
+/* ------------------------------------------
+   3. Underline Slide Button
+------------------------------------------- */
+.btn--slide {
+  background: transparent;
+  color: var(--text-dark);
+  overflow: hidden;
+}
+
+.btn--slide::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  background: var(--primary);
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width var(--transition-medium);
+}
+
+/* The underline grows smoothly */
+.btn--slide:hover::after {
+  width: 70%;
+}
+
+/* ------------------------------------------
+   4. 3D Press Button
+------------------------------------------- */
+.btn--press {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: 0 6px 0 var(--primary-dark);
+  transition: all var(--transition-fast);
+}
+
+.btn--press:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 var(--primary-dark);
+}
+
+/* ------------------------------------------
+   5. Ripple Button (Pure CSS)
+------------------------------------------- */
+.btn--ripple {
+  background: #fff;
+  color: var(--primary-dark);
+  border: 2px solid var(--primary-dark);
+  overflow: hidden;
+}
+
+.btn--ripple::before {
+  content: "";
+  position: absolute;
+  background: rgba(79,126,247,0.3);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  top: var(--y, 50%);
+  left: var(--x, 50%);
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+.btn--ripple:active::before {
+  width: 200px;
+  height: 200px;
+}
