@@ -5,31 +5,6 @@ It includes well-structured notes, practice exercises, and mini-projects that de
 
 ---
 
-## Repository Structure
-
-web-dev-learning/
-│
-├── 01-html-basics/
-│   ├── notes.md
-│   ├── practice/
-│   └── mini-projects/
-│       ├── simple-blog-v1/
-│       └── contact-form-v1/
-│
-├── 02-css-basics/        (coming soon)
-├── 03-css-layouts/       (coming soon)
-├── 04-javascript-basics/ (coming soon)
-├── 05-dom-projects/      (coming soon)
-├── 06-react-basics/      (coming soon)
-├── 07-nodejs-basics/     (coming soon)
-├── 08-expressjs-api/     (coming soon)
-├── 09-mongodb/           (coming soon)
-└── 10-fullstack-projects/ (coming soon)
-
-
-
----
-
 ## Purpose of This Repository
 
 - Build strong fundamentals in HTML, CSS, and JavaScript  
@@ -38,34 +13,6 @@ web-dev-learning/
 - Learn React, Node.js, Express, and MongoDB step-by-step  
 - Build and deploy production-ready full-stack applications  
 - Maintain a structured and consistent portfolio for SDE roles
-
----
-
-## Current Progress
-
-### Completed
-- HTML basics  
-- Semantic HTML  
-- Mini Project: Simple Blog (HTML)  
-- Mini Project: Contact Form (HTML)
-
-### Upcoming
-- CSS fundamentals  
-- CSS layouts (Flexbox, Grid)  
-- JavaScript basics  
-- DOM projects  
-- React components  
-- Backend APIs  
-- Full-stack projects
-
----
-
-## Live Project Links (GitHub Pages)
-
-These project URLs will work once GitHub Pages is fully configured:
-
-- `01-html-basics/mini-projects/simple-blog-v1/`
-- `01-html-basics/mini-projects/contact-form-v1/`
 
 ---
 
