@@ -30,7 +30,8 @@ Easy to extend into a full design system.
 ---
 
 ## 🖼️ Screenshots
-Uploading...
+<img width="419" height="92" alt="image" src="https://github.com/user-attachments/assets/9ad72462-3897-4838-8f49-795a576f0387" />
+
 
 ---
 
