@@ -5,11 +5,6 @@ This project demonstrates TypeScript basics such as types, interfaces, DOM manip
 
 ---
 
-## 📸 Screenshot  
-_Add your screenshot here_
-
----
-
 ## ✨ Features
 
 - Uses **TypeScript interfaces** for Todo model  
